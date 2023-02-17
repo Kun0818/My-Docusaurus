@@ -6,11 +6,13 @@ sidebar_label: Intro
 sidebar_position: 1
 ---
 
+import Link from "@docusaurus/Link";
+
 # 目錄
 
 
-#### 筆記類型
-- [HTML](http://google.com)
+#### 筆記類別
+- <Link to='/docs/category/html'>HTML</Link>
 - [CSS]
 - [React]
 - [GIT]
