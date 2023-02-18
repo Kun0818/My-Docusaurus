@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Website',
+  title: 'Kunda Website',
   tagline: 'Keep improving every day',
   favicon: 'img/favicon.ico',
 
@@ -28,8 +28,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hant',
+    locales: ['zh-Hant'],
   },
 
   presets: [
@@ -60,7 +60,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/kunda_logo.png',
       navbar: {
-        title: 'Kunda Website',
+        title: 'Website',
         logo: {
           alt: 'My Site Logo',
           src: 'img/kunda_logo.png',
