@@ -13,7 +13,7 @@ import Link from "@docusaurus/Link";
 
 #### 筆記類別
 - <Link to='/docs/category/html'>HTML</Link>
-- [CSS]
+- <Link to='/docs/category/css'>CSS</Link>
 - [React]
 - [GIT]
 - [MarkDown]

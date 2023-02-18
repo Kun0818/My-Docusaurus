@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Kunda Website',
+  title: 'Website',
   tagline: 'Keep improving every day',
   favicon: 'img/favicon.ico',
 
