@@ -14,10 +14,10 @@ import Link from "@docusaurus/Link";
 #### 筆記類別
 - <Link to='/docs/category/html'>HTML</Link>
 - <Link to='/docs/category/css'>CSS</Link>
+- <Link to='/docs/category/javascript'>JavaScript</Link>
 - [React]
 - [GIT]
 - [MarkDown]
-- [JavaScript]
 - [Vite]
 - [Docusaurus]
 
