@@ -1,44 +1,44 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Kunda Website',
-  tagline: 'Keep improving every day',
-  favicon: 'img/favicon.ico',
+  title: "Kunda Website",
+  tagline: "Keep improving every day",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://github.com',
+  url: "https://github.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/My-Docusaurus/',
+  baseUrl: "/My-Docusaurus/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Kun0818', // Usually your GitHub org/user name.
-  projectName: 'My-Docusaurus', // Usually your repo name.
+  organizationName: "Kun0818", // Usually your GitHub org/user name.
+  projectName: "My-Docusaurus", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-Hant',
-    locales: ['zh-Hant'],
+    defaultLocale: "zh-Hant",
+    locales: ["zh-Hant"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
@@ -48,7 +48,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -58,67 +58,72 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/kunda_logo.png',
+      image: "img/kunda_logo.png",
       navbar: {
-        title: 'Website',
+        title: "Website",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/kunda_logo.png',
+          alt: "My Site Logo",
+          src: "img/kunda_logo.png",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Note',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Note",
           },
-          {to: '/blog', label: 'About Me', position: 'left'},
+          { to: "/blog", label: "About Me", position: "left" },
           {
-            href: 'https://github.com/Kun0818',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/Kun0818",
+            label: "GitHub",
+            position: "right",
+          },
+          {
+            href: "https://www.cakeresume.com/s--DUDDKA_OGu9Tby376otUSw--/09_",
+            label: "CakeResume",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "Tutorial",
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "Stack Overflow",
+                href: "https://stackoverflow.com/questions/tagged/docusaurus",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "Discord",
+                href: "https://discordapp.com/invite/docusaurus",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: "Twitter",
+                href: "https://twitter.com/docusaurus",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "GitHub",
+                href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
