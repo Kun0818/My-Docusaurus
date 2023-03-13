@@ -1,0 +1,36 @@
+.Banner {
+  width: 100%;
+  padding: 4rem 0;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/static/img/howl049.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Title {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.Slogan {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  .Banner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

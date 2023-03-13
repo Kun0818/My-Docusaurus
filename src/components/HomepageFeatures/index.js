@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import WebDevelopment from '../../../static/img/WebDevelopment.png'
 import OutdoorActive from '../../../static/img/OutdoorActive.png'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useColorMode} from '@docusaurus/theme-common'
 
 const FeatureList = [
   {
@@ -42,6 +44,9 @@ function Feature({Svg, title, description}) {
 }
 
 export default function HomepageFeatures() {
+  const {colorMode} = useColorMode()
+  
+console.log(colorMode);
   return (
     <section className={styles.features}>
       <div className="container">

@@ -3,23 +3,5 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  height: 500px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background-image: url(../../static/img/howl049.jpg);
-}
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
