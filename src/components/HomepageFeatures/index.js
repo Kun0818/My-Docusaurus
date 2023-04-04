@@ -1,15 +1,17 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
-import WebDevelopment from '../../../static/img/WebDevelopment.png'
-import OutdoorActive from '../../../static/img/OutdoorActive.png'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {useColorMode} from '@docusaurus/theme-common'
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
+import WebDevelopment from "../../../static/img/WebDevelopment.png";
+import OutdoorActive from "../../../static/img/OutdoorActive.png";
+import WebDevelopmentDark from "../../../static/img/Color Composition1.png";
+import OutdoorActiveDark from "../../../static/img/Color Composition2.png";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { useColorMode } from "@docusaurus/theme-common";
 
 const FeatureList = [
   {
-    title: '網頁開發',
-    Svg:WebDevelopment,
+    title: "網頁開發",
+    Svg: WebDevelopmentDark,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -18,8 +20,8 @@ const FeatureList = [
     ),
   },
   {
-    title: '戶外活動',
-    Svg: OutdoorActive,
+    title: "戶外活動",
+    Svg: OutdoorActiveDark,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -29,9 +31,9 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
         <img className={`text--center ${styles.featureSvg}`} src={Svg} />
       </div>
@@ -44,9 +46,9 @@ function Feature({Svg, title, description}) {
 }
 
 export default function HomepageFeatures() {
-  const {colorMode} = useColorMode()
-  
-console.log(colorMode);
+  const { colorMode } = useColorMode();
+
+  console.log(colorMode);
   return (
     <section className={styles.features}>
       <div className="container">
