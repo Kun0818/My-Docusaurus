@@ -3,15 +3,16 @@ import clsx from "clsx";
 import styles from "./styles.module.css";
 import WebDevelopment from "../../../static/img/WebDevelopment.png";
 import OutdoorActive from "../../../static/img/OutdoorActive.png";
-import WebDevelopmentDark from "../../../static/img/Color Composition1.png";
-import OutdoorActiveDark from "../../../static/img/Color Composition2.png";
+import WebDevelopmentDark from "../../../static/img/Color Composition2.png";
+import OutdoorActiveDark from "../../../static/img/Color Composition1.png";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { useColorMode } from "@docusaurus/theme-common";
 
 const FeatureList = [
   {
     title: "網頁開發",
-    Svg: WebDevelopmentDark,
+    Svg: WebDevelopment,
+    Svg2: WebDevelopmentDark,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -21,7 +22,8 @@ const FeatureList = [
   },
   {
     title: "戶外活動",
-    Svg: OutdoorActiveDark,
+    Svg: OutdoorActive,
+    Svg2: OutdoorActiveDark,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -31,11 +33,16 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg,Svg2, title, description }) {
+  const { colorMode } = useColorMode();
+
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <img className={`text--center ${styles.featureSvg}`} src={Svg} />
+        <img
+          className={`text--center ${styles.featureSvg}`}
+          src={colorMode === 'light'? Svg : Svg2}
+        />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -46,9 +53,6 @@ function Feature({ Svg, title, description }) {
 }
 
 export default function HomepageFeatures() {
-  const { colorMode } = useColorMode();
-
-  console.log(colorMode);
   return (
     <section className={styles.features}>
       <div className="container">
